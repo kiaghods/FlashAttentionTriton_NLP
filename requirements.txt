@@ -1,0 +1,11 @@
+torch
+torchvision
+torchaudio
+triton
+ninja
+cmake
+wheel
+matplotlib
+numpy
+pandas
+flash-attn==1.0.9
