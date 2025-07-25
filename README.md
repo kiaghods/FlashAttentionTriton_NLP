@@ -2,6 +2,9 @@
 
 This repository contains a Triton-based reimplementation and extension of the FlashAttention algorithm, originally proposed by Dao et al. (2022), as part of a final project for COS 484: Natural Language Processing at Princeton University.
 
+## Formal Report
+Please feel free to take a look at our [White Paper](https://kiaghods.com/assets/pdfs/%5BRe%5DFlashAttention.pdf) and [Poster](https://kiaghods.com/assets/pdfs/%5BRe%5DFlashAttentionPoster.pdf)!
+
 ## Overview
 
 FlashAttention is an IO-aware exact attention algorithm designed to optimize memory bandwidth bottlenecks in transformers. We implement the full forward and backward pass in [Triton](https://github.com/openai/triton), introduce pipelining and autotuning for further performance gains, and benchmark our kernel against naive PyTorch SDPA, the original CUDA implementation, and PyTorch's FlashAttention-2 backend.
